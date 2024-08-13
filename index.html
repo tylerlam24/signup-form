@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/6e07119b20.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <div class="form-container">
             <h1 class="form-header">✦ Sign Up</h1>
-            <p>Free forever. No credit card needed.</p>
-            <button class="sign-up-btn"><img href="./assets/images/google_logo.png"> Sign Up with Google</button>
-            <button class="sign-up-btn">Sign Up with Apple</button>
+            <p class="slogan">Free forever. No credit card needed.</p>
+            <button class="sign-up-btn google"><img src="./assets/images/google_logo.png" id="google-logo"> Sign Up with Google</button>
+            <button class="sign-up-btn apple"><img src="./assets/images/apple_logo.png" id="apple-logo"> Sign Up with Apple</button>
+            <p><span class="dash-text">OR</span></p>
             <form>
-
+                <label for="name">Your Name</label>
+                <input class="input-field" id="name" placeholder="Your Name" required>
+                <label for="email">Your E-mail</label>
+                <input class="input-field" type="email" id="email" placeholder="Your E-mail" required>
+                <label for="password">Password</label>
+                <input class="input-field" type="password" id="password" placeholder="At least 8 characters" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement">I agree to all the <span style="color: #844cfb"><a href="">Term</a>, <a href="">Privacy Policy</a></span> and <span style="color: #844cfb"><a href="">Fees</a>.</span></label>
+                </div>
+                <button type="submit">Continue&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
             </form>
         </div>
         <div>
-
         </div>
     </main>
 </body>
